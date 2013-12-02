@@ -14,7 +14,7 @@ type Admin_UserGroupController struct {
 //list
 func (this *Admin_UserGroupController) Get() {
 
-	if Cache_All.IsExist("cacheAuthority") {
+	if err := Cache_All.IsExist("cacheAuthority"); err != nil {
 
 		//l := Cache_All.Get("cacheAuthority").([]*models.DbAuthority)
 		//for _, temp := range l {
