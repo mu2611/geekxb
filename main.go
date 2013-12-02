@@ -30,7 +30,7 @@ func main() {
 	beego.SetStaticPath("/css", "static/css")
 	beego.SetStaticPath("/js", "static/js")
 
-	// 配置参数
+	// 配置参数.
 	beego.SessionOn = true
 
 	//连接数据库
