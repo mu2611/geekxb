@@ -8,7 +8,7 @@ import (
 )
 
 var (
-	Cache_All *cache.Cache //权限配置缓存
+	Cache_All cache.Cache //权限配置缓存
 )
 
 //初始化缓存
@@ -18,14 +18,11 @@ func InitCache() {
 	Cache_All, err := cache.NewCache("memory", `{"interval":60}`)
 	if err != nil {
 		//抛出异常
+		Debug(err)
+		return
 	}
 
 	setCacheAdminConfigData()
-}
-
-//缓存权限数据
-func setCacheAdminConfigData() {
-
 	o := orm.NewOrm()
 	o.Using("geekxbweb")
 
@@ -43,4 +40,9 @@ func setCacheAdminConfigData() {
 		Debug("cache err!!")
 		return
 	}
+}
+
+//缓存权限数据
+func setCacheAdminConfigData() {
+
 }
