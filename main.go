@@ -26,7 +26,7 @@ func main() {
 	beego.Router("/Admin_Authority/Del", &controllers.Admin_AuthorityController{}, "get:ActionDel")
 
 	//静态地址设置( 前一个参数必须开头"/"    )
-	beego.SetStaticPath("/img", "img")
+	beego.SetStaticPath("/img", "static/img")
 	beego.SetStaticPath("/css", "static/css")
 	beego.SetStaticPath("/js", "static/js")
 
