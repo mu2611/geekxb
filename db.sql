@@ -1,5 +1,8 @@
+delimiter $$
+
 CREATE DATABASE `geekxbweb` /*!40100 DEFAULT CHARACTER SET utf8 */$$
 
+delimiter $$
 
 CREATE TABLE `DB_Article` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
