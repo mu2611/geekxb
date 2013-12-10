@@ -13,7 +13,6 @@ var (
 
 //初始化缓存
 func InitCache() {
-
 	//初始化权限配置缓存
 	Cache_All, err := cache.NewCache("memory", `{"interval":60}`)
 	if err != nil {
