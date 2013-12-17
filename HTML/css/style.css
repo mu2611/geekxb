@@ -824,6 +824,7 @@ font-weight: normal;}
 .sticky2 .slider-prev,.sticky2 .slider-next{position:absolute;top:50%;right:5px;margin-top:-12px;background-color:#e6e6e6;color:#aaa;padding:2px 7px}
 .sticky2 .slider-prev{right:29px}
 .sticky2 .slider-prev:hover,.sticky2 .slider-next:hover{background-color:#4a4a4a;color:#fff}
+
 .excerpt{background-color:#fff;padding:20px 20px 20px 256px;margin-bottom:1px;position:relative;border-left:solid 4px #fff;*zoom:1}
 .excerpt:before,.excerpt:after{display:table;content:"";line-height:0}
 .excerpt:after{clear:both}
@@ -839,6 +840,22 @@ font-weight: normal;}
 .excerpt .itag a{border-style:solid;border-width:1px;border-color:#e2e2e2 #ddd #ddd #e2e2e2;display:inline-block;margin-right:3px;border-radius:1px;padding:0 5px;line-height:18px}
 .excerpt .muted,.article-header .muted,.article-header .cate{margin-right:20px}
 .excerpt .note{margin-bottom:0}
+
+.excerpt_list{background-color:#fff;padding:10px 10px 0px 65px;margin-bottom:1px;position:relative;border-left:solid 4px #fff;*zoom:1}
+.excerpt_list:before,.excerpt_list:after{display:table;content:"";line-height:0}
+.excerpt_list:after{clear:both}
+.excerpt_list header{margin:0 40px 5px 0}
+.excerpt_list .focus{float:left;width:40px;margin-left:-55px;text-align:center;position:relative}
+.excerpt_list .thumbnail img{width:40px;height:40px;display:block}
+.excerpt_list .thumbnail:hover{border-color:#ccc;border-bottom-color:#bbb}
+.excerpt_list header .label{margin-right:5px;position:relative;top:-2px}
+
+.excerpt_list h2{display:inline;font-size:16px;margin:0;font-weight:normal;position:relative;top:1px;line-height:18px}
+.excerpt_list h2 strong{color:#8CAC52;margin-right:10px}
+.excerpt_list .itag a{border-style:solid;border-width:1px;border-color:#e2e2e2 #ddd #ddd #e2e2e2;display:inline-block;margin-right:3px;border-radius:1px;padding:0 5px;line-height:18px}
+.excerpt_list .muted,.article-header .muted,.article-header .cate{margin-right:20px}
+.excerpt_list:hover{border-left-color:#428bca;padding-left:69px;margin-left:-4px;background-color:#F8FCFE}
+
 .comm{position:absolute;right:20px;top:23px;color:#fff;background-color:#428bca;padding:1px 8px 0px;min-width:14px;text-align:center}
 .comm i{display:inline-block;border:5px dotted;border-color:#428bca transparent;border-bottom-width:0;border-left-width:0;position:absolute;bottom:-5px;left:50%;margin-left:-2px}
 .comm:hover{color:#fff;background-color:#D9534F}
