@@ -11,9 +11,10 @@ func InitDb() {
 	database := beego.AppConfig.String("mysqldb")
 	username := beego.AppConfig.String("mysqluser")
 	password := beego.AppConfig.String("mysqlpass")
+	dburls := beego.AppConfig.String("mysqlurls")
 
-	orm.RegisterDriver("mysql", orm.DR_MySQL)
+	//orm.RegisterDriver("mymysql", orm.DR_MySQL)
 
-	orm.RegisterDataBase("default", "mysql", ""+username+":"+password+"@/"+database+"?charset=utf8", 30)
+	orm.RegisterDataBase("default", "mysql", ""+username+":"+password+"@tcp("+dburls+")/"+database+"?charset=utf8", 30)
 
 }

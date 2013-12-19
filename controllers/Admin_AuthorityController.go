@@ -27,7 +27,7 @@ func (this *Admin_AuthorityController) Get() {
 
 	var items []*models.DbAuthority
 	//记录总数
-	itemCount, _ := o.QueryTable("DbAuthority").Count()
+	itemCount, err := o.QueryTable("DbAuthority").Count()
 
 	//页数超出后重新计算定位到最大页数
 	var maxPagenum int64
