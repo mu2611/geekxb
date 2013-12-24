@@ -143,7 +143,7 @@ a:hover,a:focus{color:#3071A9;text-decoration:none}
 .container{margin-bottom:10px}
 .content-wrap{width:100%;float:left}
 .content{margin-right:370px}
-.content11{margin-right:0px}
+.content11{margin-right:0px;}
 .content-page{position: relative;background-color: #fff;}
 .page-sidebar{width: 225px;position: absolute;top: 0;left: 0;bottom: 0;height:100%;border-right: 1px solid #eee;}
 .content-title{font-size: 20px;font-weight: normal;padding: 15px 20px 14px;line-height: 20px;background-color: #F7F7F7;margin: 0 0 1px;border-bottom: 1px solid #eee;}
@@ -889,7 +889,7 @@ font-weight: normal;}
 .article-footer,.article-author{padding:15px 20px;overflow: hidden;}
 .article-header{margin-bottom:1px;padding:8px 20px 12px;background-color:#F7F7F7}
 .article-title a{color: #444;}
-.article-content{font-size:14px;line-height:25px;word-break:break-all;word-wrap:break-word;padding-bottom:5px}
+.article-content{font-size:14px;line-height:25px;word-break:break-all;word-wrap:break-word;padding-bottom:5px; min-height:697px}
 .article-content img:hover{background-color:#fbfbfb;border-color:#ddd}
 .article-content h3,.article-content h4， .article-content h5{border-bottom:#eee 1px solid;padding-bottom:5px;margin-bottom:20px}
 .article-content h2{font-size:18px;font-weight:normal;margin:20px -20px 20px -24px;padding:10px 20px 9px 20px;line-height:18px;border-left:4px solid #428BCA;background-color:#fbfbfb}

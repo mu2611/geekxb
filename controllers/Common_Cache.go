@@ -14,7 +14,7 @@ var (
 //初始化缓存
 func InitCache() {
 	//初始化权限配置缓存
-	Cache_All, err := cache.NewCache("memory", `{"interval":60}`)
+	Cache_All, err := cache.NewCache("memory", `{"interval":600000000000}`)
 	if err != nil {
 		//抛出异常
 		Debug(err)
@@ -39,6 +39,8 @@ func InitCache() {
 		Debug("cache err!!")
 		return
 	}
+
+	//Debug("%s", Cache_All.Get("cacheAuthority"))
 }
 
 //缓存权限数据
