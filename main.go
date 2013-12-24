@@ -41,4 +41,5 @@ func main() {
 	controllers.InitCache()
 
 	beego.Run()
+
 }
